@@ -1,46 +1,55 @@
-
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Task Instructions — Study</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link rel="stylesheet" href="assets/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Task 2 — Instructions</title>
+
+  <!-- OPTIONAL: keep your stylesheet if you have one -->
+  <link rel="stylesheet" href="./assets/styles.css" />
+
+  <!-- IMPORTANT: no <base> tag -->
 </head>
 <body>
-  <div class="container">
-    <div class="card">
-      <div class="header">
-        <h1>Task Instructions</h1>
-        <span class="badge">Step 2 of 6</span>
-      </div>
-      <div class="progress"><div class="bar" style="width: var(--w)"></div></div>
-      <div class="main">
-        <div class="section">
+  <div class="page">
+    <header class="header">
+      <h1>Task 2: Instructions</h1>
+      <p class="subtitle">Please read carefully, then continue to the prototype.</p>
+    </header>
 
-<h2>What you'll do</h2>
-<p>
-In this study, you will interact with a prototype interface designed to support healthcare professionals in analyzing patient data. You will be asked to complete two short tasks:
-</p>
-<ul>
-  <li>Task 1: Build a prediction pipeline. Use the interface to create a simple pipeline that predicts the likelihood of a patient outcome (e.g., “risk of complication”). Configure the pipeline by selecting input variables (like age, test results) and a model type. Run the pipeline and view the prediction result.</li>
-  <li>Task 2:Analyze patient trend data. Use the interface to analyze patient cohort trends (e.g., “blood pressure development over time”). Adjust parameters (e.g., age group, treatment type) to refine the trend analysis. Interpret the visualized trend output.</li>
-</ul>
-<div class="info">Tip: If you get stuck, note the time and continue. Assistance policies differ across tasks.</div>
-<h2>Consent & Recording</h2>
-<p>Please complete each task to the best of your ability. There are no right or wrong answers—the goal is to evaluate how the interface supports you while performing these tasks. If you are unsure about a step, try to continue in the way that feels most natural to you.</p>
+    <main class="content">
+      <!-- Your Task 2 content -->
+      <section class="card">
+        <h2>What you’ll do</h2>
+        <ol>
+          <li>Review the patient overview to understand recent trends.</li>
+          <li>Configure the pipeline to run a prediction.</li>
+          <li>Confirm the output and note anything unclear.</li>
+        </ol>
+      </section>
 
-        </div>
-        <div class="nav">
-          <button id="prevBtn" class="btn secondary" aria-label="Previous">← Back</button>
-          <span id="nextLabel" class="footer-note">Use Next to continue</span>
-          <button id="nextBtn" class="btn" aria-label="Next">Next →</button>
-        </div>
+      <section class="card">
+        <h2>Completion criteria</h2>
+        <ul>
+          <li>You reached the results screen for the provided patient case.</li>
+          <li>You can state which configuration parameters you changed.</li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Footer / Pager: REWRITTEN to use anchors, not buttons -->
+    <div class="footer">
+      <div class="nav">
+        <a class="btn secondary" href="./task.html" aria-label="Previous">← Back</a>
+        <span id="nextLabel" class="footer-note">Use Next to continue</span>
+        <a class="btn" href="./prototype.html" rel="next" aria-label="Next">Next →</a>
       </div>
+      <div class="footer-note">© 2025 Usability Study — Prototype Test Platform</div>
     </div>
-    <div class="footer-note">© 2025 Usability Study — Prototype Test Platform</div>
   </div>
-  <script src="assets/script.js"></script>
+
+  <!-- No JS required for navigation -->
+  <!-- If you still need your script for other features, keep it but navigation won't rely on it. -->
+  <!-- <script data-cfasync="false" src="assets/script.js"></script> -->
 </body>
 </html>
