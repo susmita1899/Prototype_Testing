@@ -1,0 +1,76 @@
+:root{
+  --bg:#0b1020;
+  --card:#111a33;
+  --ink:#e7ecff;
+  --muted:#9fb0ff;
+  --accent:#5b7cfa;
+  --ok:#3ad29f;
+  --warn:#ffb020;
+  --danger:#ff6b6b;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink);
+  background:linear-gradient(180deg,#0b1020,#0b1020 40%,#0f1630);
+}
+.container{
+  max-width:1100px;
+  margin:0 auto;
+  padding:24px;
+}
+.card{
+  background:var(--card);
+  border:1px solid #1d2752;
+  box-shadow:0 10px 30px rgba(0,0,0,.3), inset 0 1px 0 rgba(255,255,255,.03);
+  border-radius:20px;
+  overflow:hidden;
+}
+.header{
+  display:flex;align-items:center;gap:12px;
+  padding:18px 20px;border-bottom:1px solid #223067;background:rgba(255,255,255,.02)
+}
+.header h1{font-size:18px;margin:0;font-weight:700;letter-spacing:.2px}
+.header .badge{
+  margin-left:auto;
+  background:#0e1a45;border:1px solid #1d2752;color:var(--muted);
+  padding:6px 10px;border-radius:999px;font-size:12px
+}
+.main{padding:0}
+.section{padding:22px}
+h2{margin:0 0 8px}
+p{color:var(--muted);line-height:1.6}
+.nav{
+  display:flex;justify-content:space-between;gap:10px;padding:16px;border-top:1px solid #223067;background:rgba(255,255,255,.02)
+}
+button, .btn{
+  appearance:none;border:none;cursor:pointer;font-weight:600;
+  background:var(--accent);color:white;border-radius:12px;padding:12px 16px;
+  transition:.2s transform, .2s opacity, .2s background;
+  text-decoration:none;display:inline-flex;align-items:center;gap:10px
+}
+.btn.secondary{background:#192a6a;color:var(--muted)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.progress{
+  height:6px;background:#0f1c49;border-top:1px solid #223067
+}
+.progress .bar{
+  height:6px;background:linear-gradient(90deg,#5b7cfa,#8ea0ff);
+  width:var(--w,0%); transition:width .3s ease
+}
+.info{
+  display:flex;gap:12px;align-items:flex-start;
+  background:#0e183d;border:1px dashed #2a3b81;border-radius:14px;padding:12px 14px;margin:12px 0;color:#cbd6ff
+}
+iframe.resp{
+  width:100%;
+  min-height:70vh;
+  border:0;
+  background:#0b1020
+}
+small.hint{display:block;color:#8ea0ff;margin-top:6px}
+.footer-note{
+  color:#7f92ff;font-size:12px;text-align:center;margin-top:14px
+}
